@@ -1,0 +1,121 @@
+/*
+ █████   ███   █████ █████                                                                                                                                      ███                       ███████ 
+░░███   ░███  ░░███ ░░███                                                                                                                                      ░░░                       ███░░░███
+ ░███   ░███   ░███  ░███████   █████ ████     ██████   ████████   ██████     █████ ████  ██████  █████ ████     █████  ████████    ██████   ██████  ████████  ████  ████████    ███████░░░   ░███
+ ░███   ░███   ░███  ░███░░███ ░░███ ░███     ░░░░░███ ░░███░░███ ███░░███   ░░███ ░███  ███░░███░░███ ░███     ███░░  ░░███░░███  ███░░███ ███░░███░░███░░███░░███ ░░███░░███  ███░░███  ███████ 
+ ░░███  █████  ███   ░███ ░███  ░███ ░███      ███████  ░███ ░░░ ░███████     ░███ ░███ ░███ ░███ ░███ ░███    ░░█████  ░███ ░███ ░███ ░███░███ ░███ ░███ ░███ ░███  ░███ ░███ ░███ ░███ ░███░░░  
+  ░░░█████░█████░    ░███ ░███  ░███ ░███     ███░░███  ░███     ░███░░░      ░███ ░███ ░███ ░███ ░███ ░███     ░░░░███ ░███ ░███ ░███ ░███░███ ░███ ░███ ░███ ░███  ░███ ░███ ░███ ░███ ░░░      
+    ░░███ ░░███      ████ █████ ░░███████    ░░████████ █████    ░░██████     ░░███████ ░░██████  ░░████████    ██████  ████ █████░░██████ ░░██████  ░███████  █████ ████ █████░░███████  ███     
+     ░░░   ░░░      ░░░░ ░░░░░   ░░░░░███     ░░░░░░░░ ░░░░░      ░░░░░░       ░░░░░███  ░░░░░░    ░░░░░░░░    ░░░░░░  ░░░░ ░░░░░  ░░░░░░   ░░░░░░   ░███░░░  ░░░░░ ░░░░ ░░░░░  ░░░░░███ ░░░      
+                                 ███ ░███                                      ███ ░███                                                              ░███                       ███ ░███          
+                                ░░██████                                      ░░██████                                                               █████                     ░░██████           
+                                 ░░░░░░                                        ░░░░░░                                                               ░░░░░                       ░░░░░░            
+Written by the developer of https://orbitt.sbs/ https://viora.buzz/ https://itzsam.cfd/ and https://pnk.wtf/
+*/
+
+/* =============
+    Root & Reset
+   ============= */
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+
+/* =============
+    Main Stuff
+   ============= */
+.maincard{
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #ffffff;
+    padding: 15px;
+    background-color: #0e000a;
+    width: fit-content;
+    max-width: 970px;
+}
+nav{
+    flex: 0 0 100%;
+}
+#logosmall{
+    width: 75px;
+    height: auto;
+}
+.left{
+    flex: 0 0 25%;
+}
+#pfp{
+    width: 200px;
+    height: auto;
+    border: 2px dashed #ff68cf;
+}
+.right{
+    flex: 0 0 75%;
+}
+.right p{
+    max-width: 75ch;
+}
+.maincard-photography{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    border:2px solid #ffffff;
+    padding:15px;
+    background-color:#0e000a;
+    max-width: 970px;
+}
+.maincard-photography nav{
+    grid-column:1 / -1;
+}
+.maincard-photography > img{
+    width:100%;
+    height:auto;
+    border:2px dashed #ff68cf;
+}
+
+/* =============
+    Footer Stuff
+   ============= */
+
+.footer-button{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color:#fff;
+}
+.icon{
+    width:1em;
+    height:1em;
+    background-color:currentColor;
+    display:inline-block;
+}
+.icon-pronouns{
+    mask:url("./images/pronouns.page.svg") no-repeat center;
+    mask-size:contain;
+    -webkit-mask:url("./images/pronouns.page.svg") no-repeat center;
+    -webkit-mask-size:contain;
+}
+.footer-buttons{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+.footer-button{
+    height: 31px;
+    background-color: #180813;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    border: 2px dashed #ff68cf;
+    font-family: monospace;
+    transition: 0.3s ease;
+}
+.footer-button:hover{
+    border: 2px dashed #ff68cf;
+    transform: scale(1.1) rotate(5deg);
+}
